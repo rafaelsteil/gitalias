@@ -19,24 +19,28 @@ The Git aliases I use
   changed = green
   untracked = cyan
 [push]
-        default = simple
+  default = simple
 [rerere]
-        enabled = true
+  enabled = true
 [alias]
-        s = status
-        co = checkout
-        d = diff
-        cm = commit -m
-        ca = commit -am
-        p = push origin
-        pf = push --force origin
-        pr = pull --rebase origin
-        ls = log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cgreen [%cn]" --decorate --graph
-        rh = reset --hard
+  s = status
+  co = checkout
+  d = diff
+  cm = commit -m
+  ca = commit -am
+  p = push origin
+  pf = push --force origin
+  pr = pull --rebase origin
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cgreen [%cn]" --decorate --graph
+  rh = reset --hard
+  # Log showing changed files
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cgreen [%cn]" --decorate --numstat
+  # Reset file
+  fl = log -u 
 [credential]
-        helper = wincred
+  helper = wincred
 [stash]
-        showPatch = true
+  showPatch = true
 ```
 
 # References

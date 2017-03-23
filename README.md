@@ -31,10 +31,10 @@ The Git aliases I use
   p = push origin
   pf = push --force origin
   pr = pull --rebase origin
-  ls = log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cgreen [%cn]" --decorate --graph
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --graph
   rh = reset --hard
   # Log showing changed files
-  ll = log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cgreen [%cn]" --decorate --numstat
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --numstat
   # Reset file
   fl = log -u 
 [credential]

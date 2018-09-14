@@ -24,6 +24,7 @@ The Git aliases I use
   enabled = true
 [alias]
   s = status
+  sq = "!git rebase -i HEAD~\"$1\" #"
   co = checkout
   d = diff
   cm = commit -m
